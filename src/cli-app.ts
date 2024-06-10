@@ -4,7 +4,6 @@ import { program } from 'commander';
 // Define CLI commands and options
 program
     .command('add')
-    .description('Test debounce function')
     .action(() => {
         // Initialize array
         let array: string[] = [];

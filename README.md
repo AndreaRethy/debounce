@@ -18,5 +18,16 @@ tsc src/cli-app.ts --outDir dist
 
 ```
 node dist/cli-app.js add
-
 ```
+
+## Execute in Browser
+
+To test the debounce function, type something in the text field and rapidly double click on the Submit button. It should only add the item once, after 300ms.
+
+### Chrome
+
+You can simply open the index.html file with Chrome.
+
+### Safari
+
+You will need to open the index.html file with a local server or with the liver server extension of vs code.
