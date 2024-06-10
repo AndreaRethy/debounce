@@ -3,14 +3,14 @@ import { program } from 'commander';
 
 // Define CLI commands and options
 program
-    .command('add')
-    .action(() => {
+    .command('add <item>')
+    .action((item: string) => {
         // Initialize array
         let array: string[] = [];
 
         // Define debounced function
         const debouncedAddItem = debounce(() => {
-            addNewItem(array, 'done');
+            addNewItem(array, item);
             console.log(array);
         });
 

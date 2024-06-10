@@ -16,8 +16,10 @@ tsc src/cli-app.ts --outDir dist
 
 ## Execute in CLI
 
+`<item>` should be the word you want to add to the list (string, without "")
+
 ```
-node dist/cli-app.js add
+node dist/cli-app.js add <item>
 ```
 
 ## Execute in Browser
